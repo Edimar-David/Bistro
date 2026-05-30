@@ -8,18 +8,17 @@ const DATA = {
     descricao: "Um lugar pra sentar, comer bem e não ter pressa.",
     telefone: "+5534999999999",
     whatsapp: "https://wa.me/5534999999999?text=Oi!%20Quero%20mais%20informações.",
-    instagram: "https://instagram.com/bistropetiscaria",
+    instagram: "https://www.instagram.com/bistropetiscariamc/",
     email: "contato@bistropetiscaria.com",
     endereco: {
-      rua: "Rua das Acácias, 418",
-      bairro: "Centro",
-      cidade: "Uberlândia, MG",
-      maps: "https://maps.google.com/?q=Uberlândia+MG"
+      rua: "Av. Brasil Oeste, 1900",
+      bairro: "Jardim Zeni",
+      cidade: "Monte Carmelo, MG",
+      maps: "https://maps.google.com/?q=Monte-Carmelo+MG"
     },
     horarios: [
       { dia: "Seg – Qui", hora: "18h – 00h" },
-      { dia: "Sex – Sáb",  hora: "18h – 02h" },
-      { dia: "Domingo",    hora: "17h – 22h" }
+      { dia: "Sex – Sáb",  hora: "18h – 02h" }
     ]
   },
 

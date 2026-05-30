@@ -1,0 +1,183 @@
+/* ============================================
+   BISTRÔ PETISCARIA — Responsive
+   ============================================ */
+
+/* ---- Tablet (≥ 640px) ---- */
+@media (min-width: 640px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  .gallery-grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 260px 260px;
+    padding: 0 var(--space-lg);
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 var(--space-lg);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 var(--space-lg);
+  }
+
+  .map-wrapper {
+    padding: 0 var(--space-lg);
+  }
+
+  .map-wrapper iframe {
+    height: 360px;
+  }
+
+  .event-card {
+    width: 300px;
+  }
+
+  .section-header {
+    padding: 0 var(--space-lg);
+  }
+
+  .menu-nav {
+    padding: 0 var(--space-lg) var(--space-md);
+  }
+
+  .scroll-row {
+    padding: 4px var(--space-lg) var(--space-sm);
+  }
+}
+
+/* ---- Desktop (≥ 1024px) ---- */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--space-xl);
+  }
+
+  .navbar {
+    padding: var(--space-md) var(--space-xl);
+  }
+
+  .btn-wpp-nav span {
+    display: inline;
+  }
+
+  /* Hero desktop */
+  .hero__content {
+    max-width: 600px;
+  }
+
+  .hero__title {
+    font-size: clamp(4rem, 6vw, 6.5rem);
+  }
+
+  .hero__ctas {
+    flex-direction: row;
+  }
+
+  /* Events */
+  .event-card {
+    width: 340px;
+  }
+
+  /* Menu */
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 var(--space-xl);
+  }
+
+  .menu-nav {
+    padding: 0 var(--space-xl) var(--space-md);
+  }
+
+  /* Gallery desktop */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    padding: 0 var(--space-xl);
+  }
+
+  .gallery-item:first-child {
+    grid-row: span 1;
+  }
+
+  /* Info */
+  .info-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 var(--space-xl);
+  }
+
+  .section-header {
+    padding: 0 var(--space-xl);
+  }
+
+  .scroll-row {
+    padding: 4px var(--space-xl) var(--space-sm);
+  }
+
+  .map-wrapper {
+    padding: 0 var(--space-xl);
+  }
+
+  .map-wrapper iframe {
+    height: 420px;
+  }
+
+  /* Hamburger hidden on desktop */
+  .hamburger {
+    display: none;
+  }
+
+  /* Desktop nav links */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+  }
+
+  .desktop-nav__link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(245, 245, 245, 0.7);
+    letter-spacing: 0.05em;
+    transition: color var(--transition-fast);
+  }
+
+  .desktop-nav__link:hover {
+    color: var(--color-gold);
+  }
+
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .footer {
+    padding: var(--space-2xl) var(--space-xl) var(--space-lg);
+  }
+}
+
+/* ---- Wide desktop (≥ 1440px) ---- */
+@media (min-width: 1440px) {
+  .menu-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 380px;
+  }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
